@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-transport.jpg";
 
 const HeroSection = () => {
@@ -8,31 +9,54 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="relative h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30"></div>
+    <section id="inicio" className="relative min-h-[700px] flex items-center overflow-hidden bg-gradient-to-br from-primary via-primary to-navy-dark">
+      {/* Decorative shapes */}
+      <div className="absolute top-0 right-0 w-1/2 h-full opacity-10">
+        <div 
+          className="absolute inset-0 bg-cover bg-center mix-blend-overlay"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
       </div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
+          <div className="text-white space-y-6">
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              Você pode <span className="text-accent">Confiar</span> em nós para aumentar seu <span className="text-accent">negócio</span>
+            </h1>
+            <p className="text-xl text-white/90 leading-relaxed">
+              Segurança em cada entrega, agilidade em cada trajeto. Conectando pessoas e mercadorias mundo a fora.
+            </p>
+            <div className="flex gap-4 pt-4">
+              <Button 
+                onClick={() => scrollToSection('cotacao')}
+                size="lg"
+                className="bg-accent hover:bg-accent/90 text-white px-8 py-6 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all group"
+              >
+                Solicitar Cotação
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button 
+                onClick={() => scrollToSection('sobre')}
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg rounded-full"
+              >
+                Saiba Mais
+              </Button>
+            </div>
+          </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center text-white px-4">
-        <div className="inline-block mb-6">
-          <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-lg"></div>
+          {/* Right Illustration */}
+          <div className="hidden md:block">
+            <img 
+              src={heroImage} 
+              alt="Transporte e Logística" 
+              className="rounded-2xl shadow-2xl"
+            />
+          </div>
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">BEM VINDOS</h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Segurança em cada entrega, agilidade em cada trajeto.
-        </p>
-        <Button 
-          onClick={() => scrollToSection('cotacao')}
-          size="lg"
-          className="bg-primary hover:bg-primary/90 text-white px-12 py-6 text-lg font-semibold border-2 border-white/50"
-        >
-          COTAÇÃO
-        </Button>
       </div>
     </section>
   );

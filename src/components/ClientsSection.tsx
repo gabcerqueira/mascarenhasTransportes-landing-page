@@ -1,5 +1,4 @@
 const ClientsSection = () => {
-  // Placeholder for client logos - in production, these would be actual logo images
   const clients = [
     "Magalu", "MRV", "Brisa", "Mercado Livre",
     "Direcional", "Yara", "UADE", "Andaimes Triunfo",
@@ -7,22 +6,23 @@ const ClientsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Alguns de<br />
-            Nossos<br />
-            Clientes
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
+            Nossos <span className="text-accent">Clientes</span>
           </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Empresas que confiam em nossos serviços
+          </p>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
             {clients.map((client, index) => (
               <div 
                 key={index} 
-                className="flex items-center justify-center p-6 bg-muted/50 rounded-lg hover:bg-muted transition-colors"
+                className="flex items-center justify-center p-6 bg-muted/30 rounded-xl hover:bg-accent/10 hover:shadow-md transition-all border border-transparent hover:border-accent/30"
               >
-                <span className="text-sm md:text-base font-semibold text-center text-muted-foreground">
+                <span className="text-sm font-semibold text-center text-foreground/70">
                   {client}
                 </span>
               </div>

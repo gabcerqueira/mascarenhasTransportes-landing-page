@@ -1,106 +1,125 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Instagram, Linkedin, Youtube, Phone, Mail, MapPin } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="cotacao" className="py-20 bg-muted/30">
+    <section id="cotacao" className="py-20 bg-gradient-to-br from-muted/50 to-white">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-3xl font-bold mb-6">Faça Sua Cotação</h2>
-            <p className="text-muted-foreground mb-8">
-              Preencha o formulário abaixo e entraremos em contato em breve.
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+              Solicite sua <span className="text-accent">Cotação</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Entre em contato conosco e receba uma proposta personalizada
             </p>
-            
-            <form className="space-y-4">
-              <div>
-                <Input 
-                  type="text" 
-                  placeholder="Nome" 
-                  className="w-full"
-                />
-              </div>
-              <div>
-                <Input 
-                  type="email" 
-                  placeholder="E-mail" 
-                  className="w-full"
-                />
-              </div>
-              <div>
-                <Input 
-                  type="tel" 
-                  placeholder="Telefone" 
-                  className="w-full"
-                />
-              </div>
-              <div>
-                <Textarea 
-                  placeholder="Mensagem" 
-                  className="w-full min-h-32"
-                />
-              </div>
-              <Button 
-                type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-white"
-                size="lg"
-              >
-                Enviar Mensagem
-              </Button>
-            </form>
           </div>
-          
-          {/* Contact Info */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-primary mt-1" />
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Contact Form */}
+            <Card className="border-2 hover:border-accent/50 transition-all">
+              <CardContent className="p-8">
+                <form className="space-y-5">
                   <div>
-                    <p className="font-semibold">Telefone</p>
-                    <p className="text-muted-foreground">(31) 99478-0684</p>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Nome Completo
+                    </label>
+                    <Input 
+                      type="text" 
+                      placeholder="Seu nome" 
+                      className="w-full"
+                    />
                   </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-primary mt-1" />
                   <div>
-                    <p className="font-semibold">E-mail</p>
-                    <p className="text-muted-foreground">mascarenhastransportes.com.br</p>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      E-mail
+                    </label>
+                    <Input 
+                      type="email" 
+                      placeholder="seu@email.com" 
+                      className="w-full"
+                    />
                   </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <MapPin className="w-5 h-5 text-primary mt-1" />
                   <div>
-                    <p className="font-semibold">Endereço</p>
-                    <p className="text-muted-foreground">
-                      Avenida Raja Gabáglia, 2000, Cidade Jardim<br />
-                      Belo Horizonte - MG
-                    </p>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Telefone
+                    </label>
+                    <Input 
+                      type="tel" 
+                      placeholder="(00) 00000-0000" 
+                      className="w-full"
+                    />
                   </div>
-                </div>
-              </div>
-            </div>
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Mensagem
+                    </label>
+                    <Textarea 
+                      placeholder="Descreva suas necessidades de transporte..." 
+                      className="w-full min-h-32"
+                    />
+                  </div>
+                  <Button 
+                    type="submit"
+                    className="w-full bg-accent hover:bg-accent/90 text-white py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all group"
+                    size="lg"
+                  >
+                    Enviar Mensagem
+                    <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
             
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Siga-nos nas Redes Sociais</h3>
-              <div className="flex gap-3">
-                <a href="#" className="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-primary/90 transition-colors">
-                  <Instagram className="w-5 h-5 text-white" />
-                </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-primary/90 transition-colors">
-                  <Linkedin className="w-5 h-5 text-white" />
-                </a>
-                <a href="#" className="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-primary/90 transition-colors">
-                  <Youtube className="w-5 h-5 text-white" />
-                </a>
-              </div>
+            {/* Contact Info */}
+            <div className="space-y-6">
+              <Card className="border-2 hover:border-accent/50 transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-coral-light flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-primary mb-1">Telefone</h3>
+                      <p className="text-muted-foreground">(31) 99478-0684</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-accent/50 transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-coral-light flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-primary mb-1">E-mail</h3>
+                      <p className="text-muted-foreground">contato@mascarenhastransportes.com.br</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 hover:border-accent/50 transition-all">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 rounded-full bg-coral-light flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-primary mb-1">Endereço</h3>
+                      <p className="text-muted-foreground">
+                        Avenida Raja Gabáglia, 2000<br />
+                        Cidade Jardim - Belo Horizonte/MG
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
