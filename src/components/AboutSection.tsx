@@ -79,7 +79,7 @@ const AboutSection = () => {
             
             <div className="pt-8">
               <Button 
-                onClick={() => scrollToSection('cotacao')}
+                onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531995700061&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o&type=phone_number&app_absent=0', '_blank')}
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white px-12 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
               >

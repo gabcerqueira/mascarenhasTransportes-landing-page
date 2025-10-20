@@ -47,7 +47,7 @@ const Header = () => {
               Serviços
             </button>
             <Button 
-              onClick={() => scrollToSection('cotacao')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531995700061&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o&type=phone_number&app_absent=0', '_blank')}
               className="bg-accent hover:bg-accent/90 text-white px-6 rounded-full font-medium shadow-md hover:shadow-lg transition-all"
             >
               Solicitar Cotação
@@ -85,7 +85,7 @@ const Header = () => {
               Serviços
             </button>
             <Button 
-              onClick={() => scrollToSection('cotacao')}
+              onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531995700061&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o&type=phone_number&app_absent=0', '_blank')}
               className="w-full bg-accent hover:bg-accent/90 text-white rounded-full"
             >
               Solicitar Cotação
