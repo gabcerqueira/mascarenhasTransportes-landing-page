@@ -6,17 +6,17 @@ const FeaturesSection = () => {
     {
       icon: Clock,
       title: "Tempo de Trânsito Reduzido",
-      description: "Nosso sistema online permite redução no tempo de trânsito. Rotas mais rápidas garantem entregas pontuais e eficientes.",
+      description: "Otimizamos rotas e processos com tecnologia inteligente, garantindo entregas mais rápidas, previsíveis e de alto desempenho para o seu negócio.",
     },
     {
       icon: TrendingUp,
-      title: "Maior Utilização de Ativos",
-      description: "Já entregamos centenas de cargas e podemos ajudar na análise e alocação de recursos. Isso é alcançado por meio de análise de dados de alto nível.",
+      title: "Maior Eficiência Operacional",
+      description: "Maximizamos o uso de ativos e recursos por meio de análises de dados e gestão integrada, aumentando a produtividade e reduzindo custos logísticos.",
     },
     {
       icon: ShieldCheck,
-      title: "Confiável",
-      description: "Compromisso com a segurança e integridade das cargas. Equipe dedicada e experiente trabalhando para garantir entregas seguras.",
+      title: "Confiabilidade Comprovada",
+      description: "Atuamos com total transparência e controle em cada etapa da operação. Nossa equipe especializada assegura segurança, integridade e pontualidade nas entregas.",
     },
   ];
 
