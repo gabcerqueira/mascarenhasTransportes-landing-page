@@ -12,17 +12,17 @@ const AboutSection = () => {
     {
       icon: Truck,
       title: "Motoristas",
-      description: "Profissionais experientes e dedicados ao serviço de excelência",
+      description: "Profissionais qualificados e comprometidos com a segurança e a pontualidade em cada entrega.",
     },
     {
       icon: Handshake,
       title: "Parceiros",
-      description: "Frota moderna à disposição das suas necessidades de transporte",
+      description: "Frota moderna e soluções logísticas flexíveis para atender às metas e prazos da sua operação.",
     },
     {
       icon: Users,
       title: "Clientes",
-      description: "Obtenha o melhor serviço de transporte da sua região conosco",
+      description: "Empresas que confiam na nossa expertise para garantir entregas seguras, eficientes e sob controle.",
     },
   ];
 
