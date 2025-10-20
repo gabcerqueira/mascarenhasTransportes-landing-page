@@ -23,11 +23,20 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-white space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Você pode <span className="text-accent">Confiar</span> em nós para aumentar seu <span className="text-accent">negócio</span>
+              Impulsione o Crescimento da Sua Empresa com Soluções Logísticas de <span className="text-accent">Alto Desempenho</span>
             </h1>
-            <p className="text-xl text-white/90 leading-relaxed">
-              Segurança em cada entrega, agilidade em cada trajeto. Conectando pessoas e mercadorias mundo a fora.
-            </p>
+            <div className="space-y-4">
+              <p className="text-xl text-white/90 leading-relaxed">
+                Na Mascarenhas Transportes, entregamos eficiência, segurança e previsibilidade em cada operação.
+                Somos especialistas em conectar negócios e mercados, garantindo que sua carga chegue ao destino com agilidade e total controle.
+              </p>
+              <p className="text-lg text-white/80 leading-relaxed">
+                Com tecnologia de rastreamento avançada, frota moderna e equipe altamente qualificada, oferecemos a confiabilidade que seu negócio precisa para crescer sem interrupções.
+              </p>
+              <p className="text-lg text-white font-semibold">
+                🔸 Mais eficiência. Menos riscos. Resultados reais.
+              </p>
+            </div>
             <div className="flex gap-4 pt-4">
               <Button 
                 onClick={() => window.open('https://api.whatsapp.com/send/?phone=5531995700061&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o&type=phone_number&app_absent=0', '_blank')}
@@ -40,8 +49,7 @@ const HeroSection = () => {
               <Button 
                 onClick={() => scrollToSection('sobre')}
                 size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg rounded-full"
+                className="bg-white/10 text-white border-2 border-white/20 hover:bg-white hover:text-primary px-8 py-6 text-lg rounded-full backdrop-blur-sm"
               >
                 Saiba Mais
               </Button>
