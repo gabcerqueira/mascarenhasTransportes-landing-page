@@ -23,18 +23,15 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-white space-y-6">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Impulsione o Crescimento da Sua Empresa com Soluções Logísticas de <span className="text-accent">Alto Desempenho</span>
+              Impulsione o Crescimento da Sua Empresa com Logística de <span className="text-accent">Alto Desempenho</span>
             </h1>
             <div className="space-y-4">
               <p className="text-xl text-white/90 leading-relaxed">
-                Na Mascarenhas Transportes, entregamos eficiência, segurança e previsibilidade em cada operação.
-                Somos especialistas em conectar negócios e mercados, garantindo que sua carga chegue ao destino com agilidade e total controle.
-              </p>
-              <p className="text-lg text-white/80 leading-relaxed">
-                Com tecnologia de rastreamento avançada, frota moderna e equipe altamente qualificada, oferecemos a confiabilidade que seu negócio precisa para crescer sem interrupções.
+                Na Mascarenhas Transportes, conectamos negócios e mercados com eficiência, segurança e previsibilidade.
+                Com tecnologia avançada, frota moderna e equipe especializada, garantimos entregas ágeis, rastreáveis e sob total controle.
               </p>
               <p className="text-lg text-white font-semibold">
-                🔸 Mais eficiência. Menos riscos. Resultados reais.
+                Mais eficiência. Menos riscos. Resultados reais.
               </p>
             </div>
             <div className="flex gap-4 pt-4">
